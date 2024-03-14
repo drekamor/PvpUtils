@@ -1,0 +1,18 @@
+db:
+  ==: dev.drekamor.pvputils.config.DatabaseConfig
+  database: database
+  user: user
+  password: password
+  host: host
+  port: 3609
+  poolSize: 10
+  idleTimeout: 86400
+  connectionTimeout: 86400
+  maxLifetime: 86400
+limits:
+  inventories:
+    enabled: true
+    limit: 5
+  warps:
+    enabled: true
+    limit: 5

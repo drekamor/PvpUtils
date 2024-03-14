@@ -1,0 +1,36 @@
+name: 'PvpUtils'
+description: "Adds some useful for a pvp server utils"
+main: dev.drekamor.pvputils.PvpUtils
+version: '1.0.0'
+api-version: '1.18'
+
+commands:
+  inventory:
+    description: Manage inventories
+    permission: pvputils.inventories.use
+    usage: "Usage: /<command> [load | save | remove | list] <inventory | none>"
+    aliases: [ inv ]
+  warp:
+    description: Warp to a location
+    permission: pvputils.warps.use
+    usage: "Usage: /<command> <warp>"
+  warps:
+    description: Manage warps
+    permission: pvputils.warps.manage
+    usage: "Usage: /<command> [add | remove | list] <warp | none> <gamemode | none>"
+
+
+permissions:
+  pvputils.inventories.use:
+    description: Allows using inventories
+    default: true
+  pvputils.inventories.manage:
+    description: Allows managing inventories
+    default: op
+  pvputils.warps.use:
+    description: Allows using warps
+    default: true
+  pvputils.warps.manage:
+    description: Allows managing warps
+    default: op
+
