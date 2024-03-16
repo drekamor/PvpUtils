@@ -92,7 +92,7 @@ public class WarpsHandler {
         if(player.teleport(location)){
             player.setGameMode(gamemode);
             this.plugin.info("Sent %s to %s".formatted(player.getName(), name));
-            player.sendMessage("Warping to to %s...".formatted(name));
+            player.sendMessage("Warping to %s...".formatted(name));
 
             return true;
         }
