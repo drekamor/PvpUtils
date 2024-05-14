@@ -35,7 +35,7 @@ public class WarpHandler {
         }
 
         if(this.plugin.getPluginConfig().getWarpLimitConfig().enabled()){
-            if(this.plugin.getDatabaseManager().countWarps(player.getUniqueId().toString()) > this.plugin.getPluginConfig().getWarpLimitConfig().limit()){
+            if(this.plugin.getDatabaseManager().countWarps(player.getUniqueId().toString()) >= this.plugin.getPluginConfig().getWarpLimitConfig().limit()){
                 this.plugin.info("%s has reached their warps limit".formatted(player.getName()));
                 player.sendMessage("You have reached your warps limit");
 
