@@ -11,15 +11,15 @@ import java.io.ByteArrayOutputStream;
 import java.util.Base64;
 import java.util.List;
 
-public class InventoriesHandler {
+public class InventoryHandler {
     private final PvpUtils plugin;
 
-    public InventoriesHandler(PvpUtils plugin) {
+    public InventoryHandler(PvpUtils plugin) {
         this.plugin = plugin;
     }
 
     public List<String> getIndex() {
-        return this.plugin.getIndexCache().getInventoriesIndex();
+        return this.plugin.getIndexCache().getInventoryIndex();
     }
 
     public boolean save(Player player, String name){

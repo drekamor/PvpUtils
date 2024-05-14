@@ -4,38 +4,38 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IndexCache {
-    private List<String> inventoriesIndex = new ArrayList<>();
-    private List<String> warpsIndex = new ArrayList<>();
+    private List<String> inventoryIndex = new ArrayList<>();
+    private List<String> warpIndex = new ArrayList<>();
 
-    public void setInventoriesIndex(List<String> index) {
-        if(index != null) this.inventoriesIndex = index;
+    public void setInventoryIndex(List<String> index) {
+        if(index != null) this.inventoryIndex = index;
     }
 
-    public void setWarpsIndex(List<String> index) {
-        if(index != null) this.warpsIndex = index;
+    public void setWarpIndex(List<String> index) {
+        if(index != null) this.warpIndex = index;
     }
 
-    public List<String> getInventoriesIndex() {
-        return this.inventoriesIndex;
+    public List<String> getInventoryIndex() {
+        return this.inventoryIndex;
     }
 
-    public List<String> getWarpsIndex() {
-        return this.warpsIndex;
+    public List<String> getWarpIndex() {
+        return this.warpIndex;
     }
 
     public void addInventory(String inventory) {
-        this.inventoriesIndex.add(inventory);
+        this.inventoryIndex.add(inventory);
     }
 
     public void removeInventory(String inventory) {
-        this.inventoriesIndex.remove(inventory);
+        this.inventoryIndex.remove(inventory);
     }
 
     public void addWarp(String warp) {
-        this.warpsIndex.add(warp);
+        this.warpIndex.add(warp);
     }
 
     public void removeWarp(String warp) {
-        this.warpsIndex.remove(warp);
+        this.warpIndex.remove(warp);
     }
 }

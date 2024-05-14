@@ -1,6 +1,6 @@
 package dev.drekamor.pvputils.commands;
 
-import dev.drekamor.pvputils.handlers.WarpsHandler;
+import dev.drekamor.pvputils.handlers.WarpHandler;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
@@ -9,8 +9,8 @@ import org.bukkit.entity.Player;
 import java.util.List;
 
 public class WarpCommand implements TabExecutor {
-    private final WarpsHandler handler;
-    public WarpCommand(WarpsHandler handler){
+    private final WarpHandler handler;
+    public WarpCommand(WarpHandler handler){
         this.handler = handler;
     }
     @Override

@@ -1,6 +1,6 @@
 package dev.drekamor.pvputils.commands;
 
-import dev.drekamor.pvputils.handlers.InventoriesHandler;
+import dev.drekamor.pvputils.handlers.InventoryHandler;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
@@ -9,8 +9,8 @@ import org.bukkit.entity.Player;
 import java.util.List;
 
 public class InventoryCommand implements TabExecutor {
-    private final InventoriesHandler handler;
-    public InventoryCommand(InventoriesHandler handler){
+    private final InventoryHandler handler;
+    public InventoryCommand(InventoryHandler handler){
         this.handler = handler;
     }
     @Override

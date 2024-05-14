@@ -5,8 +5,8 @@ import dev.drekamor.pvputils.commands.WarpCommand;
 import dev.drekamor.pvputils.commands.WarpsCommand;
 import dev.drekamor.pvputils.config.Config;
 import dev.drekamor.pvputils.config.DatabaseConfig;
-import dev.drekamor.pvputils.handlers.InventoriesHandler;
-import dev.drekamor.pvputils.handlers.WarpsHandler;
+import dev.drekamor.pvputils.handlers.InventoryHandler;
+import dev.drekamor.pvputils.handlers.WarpHandler;
 import dev.drekamor.pvputils.utils.IndexCache;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -18,8 +18,8 @@ public class PvpUtils extends JavaPlugin {
     private Config config;
     private DatabaseManager databaseManager;
     private IndexCache indexCache;
-    private InventoriesHandler inventoriesHandler;
-    private WarpsHandler warpsHandler;
+    private InventoryHandler inventoriesHandler;
+    private WarpHandler warpsHandler;
     @Override
     public void onEnable() {
         this.saveDefaultConfig();
@@ -45,8 +45,8 @@ public class PvpUtils extends JavaPlugin {
     }
 
     private void initializeHandlers() {
-        this.inventoriesHandler = new InventoriesHandler(this);
-        this.warpsHandler = new WarpsHandler(this);
+        this.inventoriesHandler = new InventoryHandler(this);
+        this.warpsHandler = new WarpHandler(this);
     }
     private static void registerSerializations() {
         ConfigurationSerialization.registerClass(DatabaseConfig.class);
@@ -54,8 +54,8 @@ public class PvpUtils extends JavaPlugin {
 
     private void initializeIndices() {
         this.indexCache = new IndexCache();
-        this.indexCache.setInventoriesIndex(this.databaseManager.getInventoriesIndex());
-        this.indexCache.setWarpsIndex(this.databaseManager.getWarpsIndex());
+        this.indexCache.setInventoryIndex(this.databaseManager.getInventoryIndex());
+        this.indexCache.setWarpIndex(this.databaseManager.getWarpIndex());
     }
 
     public Config getPluginConfig() {

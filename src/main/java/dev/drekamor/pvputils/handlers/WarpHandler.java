@@ -12,15 +12,15 @@ import java.io.*;
 import java.util.Base64;
 import java.util.List;
 
-public class WarpsHandler {
+public class WarpHandler {
     private final PvpUtils plugin;
 
-    public WarpsHandler(PvpUtils plugin) {
+    public WarpHandler(PvpUtils plugin) {
         this.plugin = plugin;
     }
 
     public List<String> getIndex() {
-        return this.plugin.getIndexCache().getWarpsIndex();
+        return this.plugin.getIndexCache().getWarpIndex();
     }
 
     public boolean add(Player player, String name, String gamemode){

@@ -144,7 +144,7 @@ public class DatabaseManager {
         }
         return 0;
     }
-    public List<String> getInventoriesIndex(){
+    public List<String> getInventoryIndex(){
         try {
             Connection connection = this.getConnection();
             PreparedStatement statement = connection.prepareStatement("SELECT name FROM inventories");
@@ -248,7 +248,7 @@ public class DatabaseManager {
         }
         return 0;
     }
-    public List<String> getWarpsIndex(){
+    public List<String> getWarpIndex(){
         try {
             Connection connection = this.getConnection();
             PreparedStatement statement = connection.prepareStatement("SELECT name FROM warps");
