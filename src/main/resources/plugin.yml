@@ -2,7 +2,7 @@ name: 'PvpUtils'
 description: "Adds some useful for a pvp server utils"
 main: dev.drekamor.pvputils.PvpUtils
 version: '1.0.0'
-api-version: '1.18'
+api-version: '1.20'
 
 commands:
   inventory:
