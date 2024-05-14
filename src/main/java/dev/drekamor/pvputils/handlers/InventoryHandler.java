@@ -34,7 +34,7 @@ public class InventoryHandler {
         }
 
         if(this.plugin.getPluginConfig().getInventoryLimitConfig().enabled()){
-            if(this.plugin.getDatabaseManager().countInventories(player.getUniqueId().toString()) > this.plugin.getPluginConfig().getInventoryLimitConfig().limit()){
+            if(this.plugin.getDatabaseManager().countInventories(player.getUniqueId().toString()) >= this.plugin.getPluginConfig().getInventoryLimitConfig().limit()){
                 this.plugin.info("%s has reached their inventories limit".formatted(player.getName()));
                 player.sendMessage("You have reached your inventories limit");
 
