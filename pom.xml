@@ -6,7 +6,7 @@
 
     <groupId>dev.drekamor</groupId>
     <artifactId>PvpUtils</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.18.2-R0.1-SNAPSHOT</version>
+            <version>1.20.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
